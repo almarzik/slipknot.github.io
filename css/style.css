@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #f0f0f0;
+    font-size: 24px;
+    background-color: #000;
+}
+.btn {
+    padding: 24px;
+    background-color: white;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hero {
+    
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 141px;
+    clip-path: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_link {
+}
+.logo {
+    width: 128px;
+    height: 71px;
+}
+.menu {
+    display: flex;
+    gap: 52px;
+
+}
+.menu__item {
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav__link:hover {
+    color: #CD323A;
+}
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+.offer {
+display: flex;
+flex-direction: column;
+
+
+}
+.offer_title {
+    font-size: clamp(32px, 18vw, 317px);
+    color: white;
+    margin-bottom: 71px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.offer_text {
+    font-size: 24px;
+    color: white;
+    width: 467px;
+    margin-bottom: 30px;
+}
+
+
+.offer_btn {
+    width: 217px;
+}
+.offer_btn:hover {
+    background-color: #CD323A;
+}
+.offer_img {
+    width: clamp(300px, 60vw, 884px);
+    height: clamp(300px, 70vw, 670px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.about {
+    background-color: #424042;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 120px;
+}
+.about_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.about_content {
+    width: 596px;
+    color: white;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+.about_title {
+    font-size: 64px;
+    font-weight: 900;
+}
+.about_text {
+}
+.about_link {
+    text-decoration: underline;
+    color:white;
+}
+.about_link:hover {
+    color:#CE232B;
+}
+
+.about_img {
+    
+}
+
+.about_page {
+    margin-top: 120px;
+}
+.concerts {
+}
+.concerts_heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+.concerts_title {
+    color: white;
+    font-size: 64px;
+    font-weight: 900;
+    width: 500px;
+}
+.concerts_text {
+    color: white;
+    width: 574px;
+}
+.toggles {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 80px;
+    
+  }
+
+  .modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal--active {
+    display: flex;
+  }
+  
+  .modal__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal__content {
+    position: relative;
+    padding: 50px;
+    max-width: 637px;
+    width: 90%;
+    z-index: 1;
+  
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: 10px;
+    right: 48px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+  
+  input {
+    padding: 14px;
+    font-size: 16px;
+}
+  p.contacts__note {
+    font-size: 14px;
+}
+  .contacts__title--modal {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__form--modal {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+  /* Один блок toggle */
+  .toggle {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .toggle__header {
+    background-color: #424042;
+    color: #fff;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .toggle__title {
+    font-size: 24px;
+    font-weight: 500; /* Montserrat Medium */
+    margin: 0;
+
+  }
+  
+  .toggle__icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Расстояние между заголовком и контентом */
+  .toggle__header + .toggle__content {
+    margin-top: 8px;
+  }
+  
+  .toggle__content {
+    background-color: #CE232B;
+    padding: 24px;
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .toggle--active .toggle__content {
+    display: flex;
+  }
+  
+  .toggle__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .toggle__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .toggle__text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .toggle__city {
+    font-size: 24px;
+    font-weight: 500; /* Montserrat Medium */
+    margin: 0;
+  }
+  
+  .toggle__info,
+  .toggle__price {
+    font-size: 19px;
+    font-weight: 400; /* Montserrat Regular */
+    margin: 0;
+  }
+  
+  .toggle__btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 24px 60px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle__btn:hover {
+    background-color: #333;
+  }
+.footer {
+    padding: 49px 55px;
+    background-color: #424042;
+}
+.footer_text {
+}
+
+
+/*about page*/
+
+.group {
+    padding-bottom: 120px;
+}
+
+
+.list_group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.member_group {
+    width: 376px;
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.member_img {
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    width: 376px;
+    background: linear-gradient(221deg, #CD323A 1.18%, #EE4242 49.56%, #D00B15 98.45%);
+    height: 396px;
+    border-radius: 24px;
+    clip-path: border-box;
+}
+.member_text {
+    color: #fff;
+}
+.facts {
+    background-color: #CD323A;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    padding: 42px 52px;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.facts_title {
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+    font-weight: 900;
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.facts_info {
+    display: flex;
+    gap: 24px;
+    
+}
+.info {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 16px;
+    gap: 115px;
+    border-radius: 16px;
+}
+.info_icon {
+    width: 47px;
+    height: 47px;
+}
+.info_text {
+    color: white;
+}
+.interview {
+    padding-bottom: 120px;
+}
+.interview_title {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.interview_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.interview_item {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+.interview_item img {
+    width: 576px;
+    height: 406px;
+}
+
+.interview_text {
+    color: white;
+    width: 560px;
+}
+
+
+
+
+/*about page*/
+
+.concert_page {
+margin-top: 120px;
+}
+  
+
+.discograpgy {
+    padding-bottom: 120px;
+    
+}
+
+.discograpgy_img{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.img_top {
+    display: flex;
+}
+.img_two {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.img_bot {
+    display: flex;
+    gap: 24px;
+}
+
+.dics_info{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;  
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .burger span {
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    width: 100%;
+  }
+  
+
+ /*Адаптив*/
+
+
+ @media screen and (max-width: 1200px) {
+    .offer_img {
+        width: clamp(20px, 50vw, 884px);
+    height: clamp(80px, 50vw, 670px);
+    }
+    .about_img {
+        object-fit: contain;
+        width: 560px;
+    }
+    .about_wrapper {
+        gap: 50px;
+    }
+    .img_top {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .img_bot {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 992px) {
+    .about_wrapper {
+        flex-wrap: wrap;
+        justify-content: letf;
+    }
+    .about_img {
+        object-fit: contain;
+        width: 560px;
+    }
+    .concerts_heading {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer {
+        padding: 19px 15px;
+        background-color: #424042;
+    }
+    .facts_info {
+        flex-wrap: wrap;
+    }
+    .facts_title{
+        width: 100%;
+    }
+    .interview_item {
+        width: 100%;
+    }
+    .interview_item img {
+        width: 100%;
+    }
+
+    
+}
+/* 576-768px */
+@media screen and (max-width: 768px) {
+    .burger {
+        display: flex;
+      }
+    
+    .menu {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      background: black;
+      padding: 20px;
+      z-index: 100;
+    }
+
+    .menu.active {
+      display: flex;
+      border: 1px solid white;
+    }
+}
+
+/* 320-768px */
+@media screen and (max-width: 576px) {
+    .offer_text {
+        width: 100%;
+    }
+    .offer_img {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+    .offer {
+        justify-content: center;
+        align-items: center;
+    }
+    .offer_text {
+        text-align: center;
+    }
+    .hero {
+        padding-bottom: 0;
+    }
+    h2 {
+        font-size: 34px !important;
+        justify-content: center;
+        text-align: center;
+    }
+    .about_text {
+        text-align: center;
+        justify-content: center;
+    }
+    .about_link {
+        text-align: center;
+    }
+    .about_img {
+        width: 100%;
+    }
+    .concerts_text {
+        justify-content: center;
+        text-align: center;
+    }
+    .toggle__btn {
+        font-size: 20px;
+    }
+    .member_img {
+        width: 100%;
+    }
+    .member_img img{
+        width: 100%;
+    }
+    .member_group {
+        width: 100%;
+    }
+    .facts_title {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .facts {
+        padding: 42px 12px;
+    }
+    .interview_item img {
+        width: 100%;
+        height: 100%;
+    }
+    .interview_text {
+        width: 100%;
+    }
+    .img_top {
+        width: 100%;
+    }
+    .big_img {
+        width: 100%;
+    }
+    .mini_img {
+        width: 100%;
+    }
+    .toggle__btn {
+        font-size: 17px;
+    }
+    
+}

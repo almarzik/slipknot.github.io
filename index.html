@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Slipknot | Main</title>
+</head>
+<body>
+  <div class="modal" id="contacts-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+        <div class="contacts__content">
+            <form action="#" class="contacts__form contacts__form--modal">
+                <button type="button" class="modal__close" aria-label="Закрыть">
+                    <img class="modal__icon" src="img/plus.png" alt="review5">
+                  </button>
+                <h2 class="contacts__title contacts__title--modal">
+                  ВПЕРЕД НА КОНЦЕРТ
+                 </h2>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Почта">
+                <input type="tel" placeholder="Номер телефона">
+                <a href="javascript:void(0)" class="btn toggle__btn ">Хочу на концерт</a>
+                <p class="contacts__note">
+                  *Нажимая на кнопку, вы соглашаетесь с условиями положения по обработке данныx и публичной оферты
+                </p>
+            </form>
+        </div>
+    </div>
+  </div>
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="header">
+                <a href="index.html" class="logo_link"><img  src="img/logo.png" alt="" class="logo"></a>
+                <ul class="menu">
+                    <li class="menu__item"><a href="about.html" class="nav__link">О группе</a></li>
+                    <li class="menu__item"><a href="concerts.html" class="nav__link">Концерты</a></li>
+                    <li class="menu__item"><a href="discs.html" class="nav__link">Дискография</a></li>
+                </ul>
+                <button class="burger" id="burger">
+                  <span></span><span></span><span></span>
+                </button>
+            </div>
+            <div class="offer">
+                <h1 class="offer_title">
+                    Slipknot
+                </h1>
+                <p class="offer_text">
+                    Самая мелодичная и одновременно безумная группа последних лет
+                </p>
+                <a href="concerts.html" class="btn offer_btn">Выбрать тур</a>
+            </div>
+            <img src="img/image 3.png" alt="" class="offer_img">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about_wrapper">
+                <div class="about_content">
+                    <h2 class="about_title">
+                        О группе
+                    </h2>
+                    <p class="about_text">
+                        Slipknot — одна из самых культовых метал-групп современности, известная своей агрессивной музыкой, мрачной эстетикой и фирменными масками. Группа была основана в 1995 году в Де-Мойне, штат Айова
+                    </p>
+                    <a href="about.html" class="about_link">Подробнее</a>
+                </div>
+                <img src="img/about_img.png" alt="Slipknot" class="about_img">
+            </div>
+        </div>
+    </section>
+
+    <section id="concerts" class="concerts">
+        <div class="container">
+            <div class="concerts_heading">
+                <h2 class="concerts_title">КОНЦЕРТЫ И ТУРЫ</h2>
+                <p class="concerts_text">Slipknot объявили даты своего европейского тура в 2025 году к 25-летию своего культового альбома. Тур охватит несколько стран</p>
+            </div>
+            <div class="toggles">
+                <div class="toggle"> 
+                  <div class="toggle__header">
+                    <p class="toggle__title">Франция</p>
+                    <button class="toggle__icon">×</button>
+                  </div>
+                  <div class="toggle__content">
+                    <ul class="toggle__list">
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Париж</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Лион</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Марсель</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+                <div class="toggle">
+                  <div class="toggle__header">
+                    <p class="toggle__title">Италия</p>
+                    <button class="toggle__icon">+</button>
+                  </div>
+                  <div class="toggle__content">
+                    <ul class="toggle__list">
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Париж</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Лион</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Марсель</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+                <div class="toggle"> 
+                  <div class="toggle__header">
+                    <p class="toggle__title">Испания</p>
+                    <button class="toggle__icon">+</button>
+                  </div>
+                  <div class="toggle__content">
+                    <ul class="toggle__list">
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Париж</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Лион</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Марсель</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+                <div class="toggle"> 
+                  <div class="toggle__header">
+                    <p class="toggle__title">Германия</p>
+                    <button class="toggle__icon">+</button>
+                  </div>
+                  <div class="toggle__content">
+                    <ul class="toggle__list">
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Париж</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Лион</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Марсель</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              
+                <div class="toggle"> 
+                  <div class="toggle__header">
+                    <p class="toggle__title">Россия</p>
+                    <button class="toggle__icon">+</button>
+                  </div>
+                  <div class="toggle__content">
+                    <ul class="toggle__list">
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Париж</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Лион</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                      <li class="toggle__item">
+                        <div class="toggle__text">
+                          <p class="toggle__city">Марсель</p>
+                          <p class="toggle__info">19:00 Accor Arena</p>
+                          <p class="toggle__price">Стоимость от 600$</p>
+                        </div>
+                        <a href="#" class="toggle__btn modal__btn">Забронировать место</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+<div class="footer">
+    <div class="container">
+        <div class="header">
+            <a href="#" class="logo_link"><img  src="img/logo.png" alt="" class="logo"></a>
+            <ul class="menu">
+                <li class="menu__item"><a href="about.html" class="nav__link">О группе</a></li>
+                <li class="menu__item"><a href="concerts.html" class="nav__link">Концерты</a></li>
+                <li class="menu__item"><a href="discs.html" class="nav__link">Дискография</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/js.js"></script>
+</body>
+</html>
