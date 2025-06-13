@@ -469,6 +469,18 @@ margin-top: 120px;
     gap: 24px;
 }
 
+img.mini_img {
+    width: 576px;
+    height: 352px;
+    object-fit: fill;
+}
+img.big_img {
+    height: 100%;
+    width: 576px;
+}
+.img_bot img {
+    width: 376px;
+}
 .dics_info{
     margin-top: 32px;
     display: flex;
